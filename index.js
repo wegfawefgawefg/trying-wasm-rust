@@ -1,2 +1,3 @@
-import('./pkg')
-    .catch(console.error);
+import("./pkg").catch((error) => {
+    console.error("Failed to initialize WASM module", error);
+});
